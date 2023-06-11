@@ -64,13 +64,13 @@ button {
     width: 100%;
 }
 
-#heading {
+h1 {
     font-size: 1.7em;
     color: var(--white);
     font-weight: 700;
 }
 
-#text {
+p {
     font-size: 15px;
     color: var(--light-grey);
     line-height: 1.7;
@@ -98,6 +98,20 @@ button {
     color: var(--light-grey);
 }
 
+.button:hover {
+    color: var(--white);
+    background-color: var(--medium-grey);
+}
+
+.button:active{
+    background-color: var(--orange);
+    color: var(--white);
+}
+.clicked {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
 #submit {
     margin-top: 2em;
     font-size: 17px;
@@ -111,4 +125,45 @@ button {
     background-color: var(--orange);
     color: var(--white);
     border-radius: 30px;
+}
+
+#submit:hover {
+    color: var(--orange);
+    background-color: var(--white);
+}
+
+/* thank you view */
+#thank-you-img-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#thank-you-img {
+    width: 162px;
+    height: 108px;
+}
+
+#selected-text-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0.75em;
+}
+
+#selected-text {
+    margin-top: 1.5em;
+    color: var(--orange);
+    padding: 5px 14px;
+    border-radius: 20px;
+    background-color: var(--dark-blue);
+}
+
+#thank-you-text{
+margin-top:0.5em 0 0 0;
+}
+#below-thank-you-text{
+text-align: center;
+font-size: 15.5px;
+margin:0;
 }
