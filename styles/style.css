@@ -38,7 +38,6 @@ button {
 #inside-container {
     display: flex;
     justify-content: center;
-
     width: 83%;
     aspect-ratio: 1/1;
     flex-wrap: wrap;
@@ -103,10 +102,11 @@ p {
     background-color: var(--medium-grey);
 }
 
-.button:active{
+.button:active {
     background-color: var(--orange);
     color: var(--white);
 }
+
 .clicked {
     background-color: var(--orange);
     color: var(--white);
@@ -159,11 +159,34 @@ p {
     background-color: var(--dark-blue);
 }
 
-#thank-you-text{
-margin-top:0.5em 0 0 0;
+#thank-you-text {
+    margin-top: 0.5em 0 0 0;
 }
-#below-thank-you-text{
-text-align: center;
-font-size: 15.5px;
-margin:0;
+
+#below-thank-you-text {
+    text-align: center;
+    font-size: 15.5px;
+    margin: 0;
+}
+
+@media(max-width:500px) {
+
+    #main-container {
+        width: 88vw;
+        min-height: fit-content;
+        height: 130vw;
+    }
+}
+
+@media(max-width:320px) {
+    #main-container {
+        width: 96vw;
+        min-height: fit-content;
+        height: 160vw;
+    }
+
+    .button {
+        width: 42px;
+        height: 42px;
+    }
 }
